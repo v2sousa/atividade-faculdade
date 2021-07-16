@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 3 Forms html5 </title>
+</head>
+<body>
+ <h1> Estudo de Formulários em HTML5 </h1>
+ <h2> Exemplos de como utilizar os forms </h2>
+ <p> Vamos exemplificar agora como utilizar um formulário, enviar os dados ao servidor e visualizar o retorno do servidor. </p>
+ <p><a href="pagina2.html" target="_self" type="prev"> Retorna a pagina 2. </a> </p>
+ <p> <a href="index.html" target="self" type="prev"> Retorna a pagina principal </a> </p>
+
+ <form action="processa.php" method="post">
+     <?php
+     header ('contente-type: text/html; charset= utf-8');
+     echo "dados recebidos do formulário!!! <br><br>";
+     echo "Você Digitou:" <br>
+     echo "Nome:" .$_POST["nome"]." <br> ";
+     echo " Sexo:" ,$_POST["sexo"] " <br> ";
+     ?>
+ </form>
+
+</body>
+</html>

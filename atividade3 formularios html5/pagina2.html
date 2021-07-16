@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 3 Forms html5</title>
+    <link rel="shortcut icon" href="midias/Thesquid.ink-Free-Flat-Sample-Owl.ico" type="image/x-icon">
+</head>
+<body>
+      <h1> Estudo de Formulários em HTML5.</h1>
+      <h2> Tag Datalist </h2>
+      <p><a href="index.html" target="_self" type="prev"> Retorna pagina principal </a></p>
+      <p><a href="pagina3.html" target="_blank" type="next"> Pagina 3 </a></p>
+      <form name="form1" method="post" action="">
+          Lista de Opções:
+          <input list="frutas" name="fruta" type="text"/>
+          <datalist id="frutas">
+              <option value="Maçã"> </option>
+              <option value="Melancia"> </option>
+              <option value="Pera"> </option>
+              <option value="Uva"></option>
+          </datalist>
+          <br> <br>
+      </form>
+      <h2> Tag Button </h2>
+      <button type="button">
+        <img src="midias/Thesquid.ink-Free-Flat-Sample-Owl.ico" width="50" height="50" alt="imagem">
+    </button>
+
+      <h2> Tag Select </h2>
+      <P>Selecione uma linguagem:</P>
+      <select name="linguagem" id="">
+          <option value="Java"> Java </option>
+          <option value="PHP"> PHP </option>
+          <option value="JSP"> JSP </option>
+          <option value="HTML"> HTML </option>
+      </select>
+      
+      <h2> Tag Textarea </h2>
+      <p> Utilizando a tag textarea, Define um campo de texto de várias linhas. </p>
+      <form action="">
+          <textarea name="areatexto" id="" cols="30" rows="10"> </textarea>
+      </form>
+
+      <h2> Atributo Required </h2>
+      <P> Obriga o preenchimento de determinada informação.</P>
+      <form action="demo_form.jsp">
+          Usuario: <input type="text" name="user" placeholder="Digite seu Usuario" autofocus="autofocus"/> <br>
+          Senha: <input type="password" name="senha" placeholder="Digite sua Senha"/> <br>
+          Comentarios: <br>
+          <textarea name="texto" id="texto" cols="50" rows="8"></textarea> <br>
+          <input type="submit" value="acessar"/> 
+      </form> <!-- cols: largura da area (textarea). rows: Altura da area (textarea) -->
+
+      <h2> Atributo AutoFocos </h2>
+      <p> Atributo que identifica o elemento que será dado o foco quando a página for carregada.</p>
+
+      <h2> Atributo Placeholder </h2>
+      <p> Atributo exclusivo de elementos input e textarea, ele define uma dica para digitação no campo.</p>
+
+</body>
+</html>

@@ -5,19 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LayOut</title>
+    <style>
+        div {
+            border: 1 solid gray;
+            margin: 5px;
+            padding: 5px;
+        }
+        #a {
+            background-color: aquamarine;
+        }
+        #b {
+            background-color: coral;
+            float: left;
+            width: 230px;
+            margin-top: 0;
+        }
+        #c {
+            background-color: darkcyan;
+            margin-left: 252px;
+            margin-right: 252px;
+        }
+        #d {
+            background-color: darksalmon;
+            float: right;
+            width: 230px;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    <div id="a"> 
-        <h1> Construindo Layout e Mesclando Estilos</h1>
-        <h2> 3 - Layout Congelado com Float </h2>
-    </div>
-
-    
-    <p style="text-align: left;"> <a href="layout1.html" target="_self" rel="prev"> voltar para pagina 1</a></p>
-    <p style="text-align: right;"> <a href="layout2.html" target="_self" rel="prev"> voltar para pagina 2</a></p>
-
-    <div id="rodape">
-        <p>&copy; 2021 - Direitos Reservados: vagner Web_designer</p>
+    <div id="wrapper">
+            <div id="a"> 
+                <h1> Construindo Layout e Mesclando Estilos</h1>
+                <h2> 3 - Layout Congelado com Float </h2>
+            </div>
+        <br>
+            <div id="b">
+                <h3>Bloco Esquerdo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea pariatur, accusantium voluptates nisi blanditiis, quo asperiores aliquam officia unde a recusandae totam iure. Neque veritatis officia suscipit beatae laboriosam.</p>
+            </div>
+        <br>
+            <div id="d">
+                <h3>Bloco Direito</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio reiciendis ut mollitia accusantium beatae rem ullam, optio molestias placeat rerum cum temporibus odit quam. Nesciunt quidem excepturi rerum harum?</p>
+            </div>
+        <br>
+            <div id="c">
+                <h3> Bloco Central </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad quam quae? Necessitatibus eaque suscipit ut perferendis optio beatae ipsum nobis, amet error iste iure officia, quisquam voluptatem molestias sed.</p>
+            </div>
+        <br>
+            <div id="links">
+                <p style="text-align: left;"> <a href="layout1.html" target="_self" rel="prev"> voltar para pagina 1</a></p>
+                <p style="text-align: right;"> <a href="layout2.html" target="_self" rel="prev"> voltar para pagina 2</a></p>
+            </div>
+        <br>
+            <div id="rodape">
+                <p>&copy; 2021 - Direitos Reservados: vagner Web_designer</p>
+            </div>
     </div>
 </body>
 </html>
